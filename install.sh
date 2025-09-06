@@ -40,11 +40,11 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Setup complete."
-read -p "Do you want to run script.py now? (y/n): " RUN_NOW
+read -p "Do you want to run main.py now? (y/n): " RUN_NOW
 if [ "$RUN_NOW" == "y" ] || [ "$RUN_NOW" == "Y" ]; then
-    $PYTHON_CMD script.py
+    $PYTHON_CMD main.py
 else
-    echo "run $PYTHON_CMD script.py to run the script"
+    echo "run $PYTHON_CMD main.py to run the main script"
 fi
 
 deactivate

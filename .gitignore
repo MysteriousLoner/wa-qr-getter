@@ -1,3 +1,5 @@
 /venv
 .DS_Store
 qr_screenshot.png
+/images
+/__pycache__
