@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from PIL import Image
 import base64
 
 def get_qr_screenshot(driver, output_path=None):
