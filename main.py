@@ -6,7 +6,7 @@ from qr_getter import get_qr_screenshot, get_qr_raw
 if __name__ == "__main__":
     # Set up Firefox in headless mode
     options = Options()
-    options.headless = True
+    options.add_argument("--headless")
     driver = webdriver.Firefox(options=options)
     driver.get("https://web.whatsapp.com")
     driver.implicitly_wait(30)
